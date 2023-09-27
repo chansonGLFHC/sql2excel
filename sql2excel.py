@@ -95,7 +95,6 @@ def getargs():
     args = parser.parse_args()
     return args
 
-
 def setGlobal(config):
     return
 
@@ -106,9 +105,7 @@ def setup_logging():
     logging.basicConfig(filename=LOG_NAME, filemode='a', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
     logging.info('Logging Started')
     logging.info("Log File %s",LOG_NAME)        
-    
-
-
+  
 # Purpose: Send MSTeams message to channel
 def SendTeamsMessage(webhook, title, message, msgtype="NOTICE"):
     if webhook:
@@ -122,7 +119,6 @@ def SendTeamsMessage(webhook, title, message, msgtype="NOTICE"):
             myTeamsMessage.color("#00FF00") #Default to Green
         myTeamsMessage.text(message)
         myTeamsMessage.send()
-
 
 # Purpose: Send Email to user with attachment
 def SendEmailMessage(send_from, send_to, subject, text, files=None, server="mail.glfhc.org"):
@@ -169,7 +165,6 @@ def createSQLConnection():
     
     conn = sa.create_engine("mssql+pyodbc:///?odbc_connect={}".format(params))
     return conn
-
 
 def runexcel2sql(config, conn, args):
     print("******************************")
@@ -267,7 +262,6 @@ def runexcel2sql(config, conn, args):
     print('Stop Execution: ' + (time.ctime()))
     print("******************************")
     
-
 def main():
     try:
         # get config values
