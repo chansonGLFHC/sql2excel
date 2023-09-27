@@ -1,0 +1,777 @@
+27-Sep-23 14:51:04 - Logging Started
+27-Sep-23 14:51:04 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:51:04 - Parameters Namespace(job=1)
+27-Sep-23 14:52:41 - Logging Started
+27-Sep-23 14:52:41 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:52:41 - Parameters Namespace(job=1)
+27-Sep-23 14:53:12 - Logging Started
+27-Sep-23 14:53:12 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:53:12 - Parameters Namespace(job=1)
+27-Sep-23 14:54:43 - Logging Started
+27-Sep-23 14:54:43 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:54:43 - Parameters Namespace(job=1)
+27-Sep-23 14:54:43 - Logging Stopped
+27-Sep-23 14:54:59 - Logging Started
+27-Sep-23 14:54:59 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:54:59 - Parameters Namespace(job=1)
+27-Sep-23 14:54:59 - Logging Stopped
+27-Sep-23 14:55:17 - Logging Started
+27-Sep-23 14:55:17 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:55:17 - Parameters Namespace(job=1)
+27-Sep-23 14:55:17 - Logging Stopped
+27-Sep-23 14:55:46 - Logging Started
+27-Sep-23 14:55:46 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:55:46 - Parameters Namespace(job=1)
+27-Sep-23 14:55:46 - Logging Stopped
+27-Sep-23 14:56:09 - Logging Started
+27-Sep-23 14:56:09 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:56:09 - Parameters Namespace(job=1)
+27-Sep-23 14:56:11 - Logging Started
+27-Sep-23 14:56:11 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:56:11 - Parameters Namespace(job=1)
+27-Sep-23 14:57:25 - Logging Started
+27-Sep-23 14:57:25 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:57:25 - Parameters Namespace(job=1)
+27-Sep-23 14:57:25 - Job ID 1
+27-Sep-23 14:57:25 - Logging Stopped
+27-Sep-23 14:57:36 - Logging Started
+27-Sep-23 14:57:36 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:57:36 - Parameters Namespace(job=1)
+27-Sep-23 14:57:36 - Job ID 1
+27-Sep-23 14:57:36 - Logging Stopped
+27-Sep-23 14:58:29 - Logging Started
+27-Sep-23 14:58:29 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:58:29 - Parameters Namespace(job=1)
+27-Sep-23 14:58:29 - Job ID 1
+27-Sep-23 14:58:29 - Logging Stopped
+27-Sep-23 14:58:51 - Logging Started
+27-Sep-23 14:58:51 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:58:51 - Parameters Namespace(job=1)
+27-Sep-23 14:58:51 - Job ID 1
+27-Sep-23 14:58:51 - Logging Stopped
+27-Sep-23 14:59:00 - Logging Started
+27-Sep-23 14:59:00 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:59:00 - Parameters Namespace(job=1)
+27-Sep-23 14:59:00 - Job ID 1
+27-Sep-23 14:59:00 - Logging Stopped
+27-Sep-23 14:59:36 - Logging Started
+27-Sep-23 14:59:36 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:59:36 - Parameters Namespace(job=1)
+27-Sep-23 14:59:36 - Job ID 1
+27-Sep-23 14:59:36 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:36 2023
+27-Sep-23 14:59:36 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 14:59:36 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145936595553.xlsx
+27-Sep-23 14:59:36 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927145936595553.xlsx
+27-Sep-23 14:59:36 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 14:59:36 - Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:36 2023Job 1 - Error connecting to SQL Server and executing query on Wed Sep 27 14:59:36 2023
+27-Sep-23 14:59:36 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145936595553.xlsx
+27-Sep-23 14:59:36 - Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:36 2023Job 1 - Error connecting to SQL Server and executing query on Wed Sep 27 14:59:36 2023Job 1 - Error creating excel output TH_Appointments-1-20230927145936595553.xlsx Wed Sep 27 14:59:36 2023
+27-Sep-23 14:59:36 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145936595553.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927145936595553.xlsx
+27-Sep-23 14:59:51 - Logging Started
+27-Sep-23 14:59:51 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 14:59:51 - Parameters Namespace(job=1)
+27-Sep-23 14:59:51 - Job ID 1
+27-Sep-23 14:59:51 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:51 2023
+27-Sep-23 14:59:51 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 14:59:51 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145951641339.xlsx
+27-Sep-23 14:59:51 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927145951641339.xlsx
+27-Sep-23 14:59:51 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 14:59:51 - Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:51 2023Job 1 - Error connecting to SQL Server and executing query on Wed Sep 27 14:59:51 2023
+27-Sep-23 14:59:51 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145951641339.xlsx
+27-Sep-23 14:59:51 - Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 14:59:51 2023Job 1 - Error connecting to SQL Server and executing query on Wed Sep 27 14:59:51 2023Job 1 - Error creating excel output TH_Appointments-1-20230927145951641339.xlsx Wed Sep 27 14:59:51 2023
+27-Sep-23 14:59:51 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927145951641339.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927145951641339.xlsx
+27-Sep-23 15:55:35 - Logging Started
+27-Sep-23 15:55:35 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 15:55:35 - Parameters Namespace(job=1)
+27-Sep-23 15:55:35 - Job ID 1
+27-Sep-23 15:55:35 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 15:55:35 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927155535338345.xlsx
+27-Sep-23 15:55:35 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927155535338345.xlsx
+27-Sep-23 15:55:35 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 15:55:35 - Executing sql script
+27-Sep-23 15:55:40 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927155535338345.xlsx
+27-Sep-23 15:55:41 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927155535338345.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927155535338345.xlsx
+27-Sep-23 15:55:41 - Removing temp file
+27-Sep-23 15:55:41 - Sending secure email
+27-Sep-23 15:55:44 - Job 1 Completed Successfully
+27-Sep-23 15:55:44 - Logging Stopped
+27-Sep-23 16:00:44 - Logging Started
+27-Sep-23 16:00:44 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:00:44 - Parameters Namespace(job=1)
+27-Sep-23 16:00:44 - Job ID 1
+27-Sep-23 16:00:44 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:00:44 2023
+27-Sep-23 16:00:44 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:00:44 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160044360943.xlsx
+27-Sep-23 16:00:44 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160044360943.xlsx
+27-Sep-23 16:00:44 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:01:35 - Logging Started
+27-Sep-23 16:01:35 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:01:35 - Parameters Namespace(job=1)
+27-Sep-23 16:01:35 - Job ID 1
+27-Sep-23 16:01:35 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:01:35 2023
+27-Sep-23 16:01:35 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:01:35 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160135135757.xlsx
+27-Sep-23 16:01:35 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160135135757.xlsx
+27-Sep-23 16:01:35 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:02:23 - Logging Started
+27-Sep-23 16:02:23 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:02:23 - Parameters Namespace(job=1)
+27-Sep-23 16:02:23 - Job ID 1
+27-Sep-23 16:02:23 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:02:23 2023
+27-Sep-23 16:02:23 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:02:23 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160223549798.xlsx
+27-Sep-23 16:02:23 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160223549798.xlsx
+27-Sep-23 16:02:23 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:04:37 - Logging Started
+27-Sep-23 16:04:37 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:04:37 - Parameters Namespace(job=1)
+27-Sep-23 16:04:37 - Job ID 1
+27-Sep-23 16:04:37 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:04:37 2023
+27-Sep-23 16:04:37 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:04:37 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160437673010.xlsx
+27-Sep-23 16:04:37 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160437673010.xlsx
+27-Sep-23 16:04:37 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:04:55 - Logging Started
+27-Sep-23 16:04:55 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:04:55 - Parameters Namespace(job=1)
+27-Sep-23 16:04:55 - Job ID 1
+27-Sep-23 16:04:55 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:04:55 2023
+27-Sep-23 16:04:55 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:04:55 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160455544728.xlsx
+27-Sep-23 16:04:55 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160455544728.xlsx
+27-Sep-23 16:04:55 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:05:18 - Logging Started
+27-Sep-23 16:05:18 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:05:18 - Parameters Namespace(job=1)
+27-Sep-23 16:05:18 - Job ID 1
+27-Sep-23 16:05:18 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:05:18 2023
+27-Sep-23 16:05:18 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:05:19 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160518917336.xlsx
+27-Sep-23 16:05:19 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160518917336.xlsx
+27-Sep-23 16:05:19 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:05:19 - ************************************************************************************************
+27-Sep-23 16:05:19 - ***** Job 1 Failed
+27-Sep-23 16:05:48 - Logging Started
+27-Sep-23 16:05:48 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:05:48 - Parameters Namespace(job=1)
+27-Sep-23 16:05:48 - Job ID 1
+27-Sep-23 16:05:48 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:05:48 2023
+27-Sep-23 16:05:48 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:05:48 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927160548668695.xlsx
+27-Sep-23 16:05:48 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927160548668695.xlsx
+27-Sep-23 16:05:48 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:05:48 - ************************************************************************************************
+27-Sep-23 16:05:48 - ***** Job 1 Failed
+27-Sep-23 16:05:48 - ***** xmloutput error 
+None
+27-Sep-23 16:05:49 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:35:00 - Logging Started
+27-Sep-23 16:35:00 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:35:00 - Parameters Namespace(job=1)
+27-Sep-23 16:35:00 - Job ID 1
+27-Sep-23 16:35:00 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:35:00 2023
+27-Sep-23 16:35:00 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:35:00 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927163500264918.xlsx
+27-Sep-23 16:35:00 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927163500264918.xlsx
+27-Sep-23 16:35:00 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:35:00 - ************************************************************************************************
+27-Sep-23 16:35:00 - ***** Job 1 Failed
+27-Sep-23 16:35:00 - ***** xmloutput error 
+None
+27-Sep-23 16:35:00 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:35:03 - Logging Stopped
+27-Sep-23 16:37:56 - Logging Started
+27-Sep-23 16:37:56 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:37:56 - Job ID 1
+27-Sep-23 16:37:56 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:37:56 2023
+27-Sep-23 16:37:56 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:37:56 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927163755870282.xlsx
+27-Sep-23 16:37:56 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927163755870282.xlsx
+27-Sep-23 16:37:56 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:37:56 - ************************************************************************************************
+27-Sep-23 16:37:56 - ***** Job 1 Failed
+27-Sep-23 16:37:56 - ***** xmloutput error 
+None
+27-Sep-23 16:37:57 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:37:59 - Logging Stopped
+27-Sep-23 16:37:59 - Logging Stopped
+27-Sep-23 16:40:06 - Logging Started
+27-Sep-23 16:40:06 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:40:06 - Parameters Namespace(job=1)
+27-Sep-23 16:40:06 - Job ID 1
+27-Sep-23 16:40:06 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:40:06 2023
+27-Sep-23 16:40:06 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:06 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164006250573.xlsx
+27-Sep-23 16:40:06 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164006250573.xlsx
+27-Sep-23 16:40:06 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:06 - ************************************************************************************************
+27-Sep-23 16:40:06 - ***** Job 1 Failed
+27-Sep-23 16:40:06 - ***** xmloutput error 
+None
+27-Sep-23 16:40:06 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:40:08 - Logging Stopped
+27-Sep-23 16:40:08 - Logging Stopped
+27-Sep-23 16:40:11 - Logging Started
+27-Sep-23 16:40:11 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:40:11 - Job ID 1
+27-Sep-23 16:40:11 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:40:11 2023
+27-Sep-23 16:40:11 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:11 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164011184606.xlsx
+27-Sep-23 16:40:11 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164011184606.xlsx
+27-Sep-23 16:40:11 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:11 - ************************************************************************************************
+27-Sep-23 16:40:11 - ***** Job 1 Failed
+27-Sep-23 16:40:11 - ***** xmloutput error 
+None
+27-Sep-23 16:40:11 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:40:13 - Logging Stopped
+27-Sep-23 16:40:42 - Logging Started
+27-Sep-23 16:40:42 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:40:42 - Parameters Namespace(job=1)
+27-Sep-23 16:40:42 - Job ID 1
+27-Sep-23 16:40:42 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:42 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164042656198.xlsx
+27-Sep-23 16:40:42 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164042656198.xlsx
+27-Sep-23 16:40:42 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:40:42 - Executing sql script
+27-Sep-23 16:40:43 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164042656198.xlsx
+27-Sep-23 16:40:43 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164042656198.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164042656198.xlsx
+27-Sep-23 16:40:43 - Removing temp file
+27-Sep-23 16:40:43 - Sending secure email
+27-Sep-23 16:40:46 - Job 1 Completed Successfully
+27-Sep-23 16:40:46 - Logging Stopped
+27-Sep-23 16:42:15 - Logging Started
+27-Sep-23 16:42:15 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:42:15 - Parameters Namespace(job=1)
+27-Sep-23 16:42:15 - Job ID 1
+27-Sep-23 16:42:15 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:42:15 2023
+27-Sep-23 16:42:15 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:42:15 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164215895929.xlsx
+27-Sep-23 16:42:15 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164215895929.xlsx
+27-Sep-23 16:42:15 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:42:15 - ************************************************************************************************
+27-Sep-23 16:42:15 - ***** Job 1 Failed
+27-Sep-23 16:42:15 - ***** xmloutput error 
+None
+27-Sep-23 16:42:16 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:42:18 - Logging Stopped
+27-Sep-23 16:43:01 - Logging Started
+27-Sep-23 16:43:01 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:43:01 - Parameters Namespace(job=1)
+27-Sep-23 16:43:01 - Job ID 1
+27-Sep-23 16:43:01 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:43:01 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164301950774.xlsx
+27-Sep-23 16:43:01 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164301950774.xlsx
+27-Sep-23 16:43:01 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:43:01 - Executing sql script
+27-Sep-23 16:43:02 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164301950774.xlsx
+27-Sep-23 16:43:02 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164301950774.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164301950774.xlsx
+27-Sep-23 16:43:02 - Removing temp file
+27-Sep-23 16:43:02 - Sending secure email
+27-Sep-23 16:43:05 - Job 1 Completed Successfully
+27-Sep-23 16:43:05 - Logging Stopped
+27-Sep-23 16:44:09 - Logging Started
+27-Sep-23 16:44:09 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:44:09 - Parameters Namespace(job=1)
+27-Sep-23 16:44:09 - Job ID 1
+27-Sep-23 16:44:09 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:44:09 2023
+27-Sep-23 16:44:09 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:44:09 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164409520591.xlsx
+27-Sep-23 16:44:09 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164409520591.xlsx
+27-Sep-23 16:44:09 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:44:09 - ************************************************************************************************
+27-Sep-23 16:44:09 - ***** Job 1 Failed
+27-Sep-23 16:44:09 - ***** xmloutput error 
+None
+27-Sep-23 16:44:10 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:44:12 - Logging Stopped
+27-Sep-23 16:48:40 - Logging Started
+27-Sep-23 16:48:40 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:48:40 - Parameters Namespace(job=1)
+27-Sep-23 16:48:40 - Job ID 1
+27-Sep-23 16:48:40 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:48:40 2023
+27-Sep-23 16:48:40 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:48:40 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164840286519.xlsx
+27-Sep-23 16:48:40 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164840286519.xlsx
+27-Sep-23 16:48:40 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:48:40 - ************************************************************************************************
+27-Sep-23 16:48:40 - ***** Job 1 Failed
+27-Sep-23 16:48:40 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 211, in runexcel2sql
+    filedata = open(JobInputSQL, "r")
+           ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'c:\\users\\chanson\\documents\\dev\\github\\sql2excel/SQL/1_Telehealth next 7 days.sql'
+
+27-Sep-23 16:48:40 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:48:43 - Logging Stopped
+27-Sep-23 16:49:56 - Logging Started
+27-Sep-23 16:49:56 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:49:56 - Job ID 1
+27-Sep-23 16:49:56 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:49:56 2023
+27-Sep-23 16:49:56 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:49:56 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927164956279031.xlsx
+27-Sep-23 16:49:56 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927164956279031.xlsx
+27-Sep-23 16:49:56 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:49:56 - ************************************************************************************************
+27-Sep-23 16:49:56 - ***** Job 1 Failed
+27-Sep-23 16:49:56 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sql2excel.py", line 207, in runexcel2sql
+    filedata = open(JobInputSQL, "r")
+           ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'c:\\users\\chanson\\documents\\dev\\github\\sql2excel/SQL/1_Telehealth next 7 days.sql'
+
+27-Sep-23 16:49:57 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:49:59 - Logging Stopped
+27-Sep-23 16:50:19 - Logging Started
+27-Sep-23 16:50:19 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:50:19 - Job ID 1
+27-Sep-23 16:50:19 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:50:19 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165019296443.xlsx
+27-Sep-23 16:50:19 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165019296443.xlsx
+27-Sep-23 16:50:19 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:50:19 - Executing sql script
+27-Sep-23 16:50:19 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165019296443.xlsx
+27-Sep-23 16:50:19 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165019296443.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165019296443.xlsx
+27-Sep-23 16:50:20 - Removing temp file
+27-Sep-23 16:50:20 - Sending secure email
+27-Sep-23 16:50:22 - Job 1 Completed Successfully
+27-Sep-23 16:50:22 - Logging Stopped
+27-Sep-23 16:50:27 - Logging Started
+27-Sep-23 16:50:27 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:50:27 - Parameters Namespace(job=1)
+27-Sep-23 16:50:27 - Job ID 1
+27-Sep-23 16:50:27 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:50:27 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165027042460.xlsx
+27-Sep-23 16:50:27 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165027042460.xlsx
+27-Sep-23 16:50:27 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:50:27 - Executing sql script
+27-Sep-23 16:50:27 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165027042460.xlsx
+27-Sep-23 16:50:27 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165027042460.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165027042460.xlsx
+27-Sep-23 16:50:27 - Removing temp file
+27-Sep-23 16:50:27 - Sending secure email
+27-Sep-23 16:50:31 - Job 1 Completed Successfully
+27-Sep-23 16:50:31 - Logging Stopped
+27-Sep-23 16:51:31 - Logging Started
+27-Sep-23 16:51:31 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:51:31 - ************************************************************************************************
+27-Sep-23 16:51:31 - ***** Job 1 Failed
+27-Sep-23 16:51:31 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 270, in main
+    setup_logging()
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 100, in setup_logging
+    logging.info("Parameters %s",args)
+                                 ^^^^
+NameError: name 'args' is not defined
+
+27-Sep-23 16:51:31 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:51:33 - Logging Stopped
+27-Sep-23 16:52:37 - Logging Started
+27-Sep-23 16:52:37 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:52:37 - Job ID 1
+27-Sep-23 16:52:37 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:52:37 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165237375415.xlsx
+27-Sep-23 16:52:37 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165237375415.xlsx
+27-Sep-23 16:52:37 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:52:37 - Executing sql script
+27-Sep-23 16:52:37 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165237375415.xlsx
+27-Sep-23 16:52:38 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165237375415.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165237375415.xlsx
+27-Sep-23 16:52:38 - Removing temp file
+27-Sep-23 16:52:38 - Sending secure email
+27-Sep-23 16:52:41 - Job 1 Completed Successfully
+27-Sep-23 16:52:41 - Logging Stopped
+27-Sep-23 16:53:27 - Logging Started
+27-Sep-23 16:53:27 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:53:27 - Job ID 1
+27-Sep-23 16:53:27 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:53:27 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165327821167.xlsx
+27-Sep-23 16:53:27 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165327821167.xlsx
+27-Sep-23 16:53:27 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:53:27 - Executing sql script
+27-Sep-23 16:54:01 - ************************************************************************************************
+27-Sep-23 16:54:01 - ***** Job 1 Failed
+27-Sep-23 16:54:01 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 210, in runexcel2sql
+    result = pd.read_sql_query(sqldata, conn, coerce_float='False')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 468, in read_sql_query
+    with pandasSQL_builder(con) as pandas_sql:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 832, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 1539, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3264, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2426, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+27-Sep-23 16:54:02 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:54:04 - Logging Stopped
+27-Sep-23 16:55:28 - Logging Started
+27-Sep-23 16:55:28 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:55:28 - Job ID 1
+27-Sep-23 16:55:28 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql Wed Sep 27 16:55:28 2023
+27-Sep-23 16:55:28 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:55:28 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165528861117.xlsx
+27-Sep-23 16:55:28 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165528861117.xlsx
+27-Sep-23 16:55:28 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:55:28 - ************************************************************************************************
+27-Sep-23 16:55:28 - ***** Job 1 Failed
+27-Sep-23 16:55:28 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 256, in main
+    runexcel2sql(config, conn, args)
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 205, in runexcel2sql
+    filedata = open(JobInputSQL, "r")
+           ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'c:\\users\\chanson\\documents\\dev\\github\\sql2excel/SQL/1_Telehealth next 7 days.sql'
+
+27-Sep-23 16:55:29 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:55:31 - Logging Stopped
+27-Sep-23 16:57:30 - Logging Started
+27-Sep-23 16:57:30 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:57:30 - Job ID 1
+27-Sep-23 16:57:30 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:57:30 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165730446564.xlsx
+27-Sep-23 16:57:30 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165730446564.xlsx
+27-Sep-23 16:57:30 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:57:30 - Executing sql script
+27-Sep-23 16:58:04 - ************************************************************************************************
+27-Sep-23 16:58:04 - ***** Job 1 Failed
+27-Sep-23 16:58:04 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 255, in main
+    runexcel2sql(config, conn, args)
+  File "c:\users\chanson\documents\dev\github\sql2excel\sqltoexcel.json.py", line 209, in runexcel2sql
+    result = pd.read_sql_query(sqldata, conn, coerce_float='False')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 468, in read_sql_query
+    with pandasSQL_builder(con) as pandas_sql:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 832, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\sql.py", line 1539, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3264, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2426, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chanson\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+27-Sep-23 16:58:04 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+27-Sep-23 16:58:07 - Logging Stopped
+27-Sep-23 16:58:19 - Logging Started
+27-Sep-23 16:58:19 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:58:19 - Job ID 1
+27-Sep-23 16:58:19 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:58:19 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165819278496.xlsx
+27-Sep-23 16:58:19 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165819278496.xlsx
+27-Sep-23 16:58:19 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:58:19 - Executing sql script
+27-Sep-23 16:58:19 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165819278496.xlsx
+27-Sep-23 16:58:20 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165819278496.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165819278496.xlsx
+27-Sep-23 16:58:20 - Removing temp file
+27-Sep-23 16:58:20 - Sending secure email
+27-Sep-23 16:58:23 - Job 1 Completed Successfully
+27-Sep-23 16:58:23 - Logging Stopped
+27-Sep-23 16:59:24 - Logging Started
+27-Sep-23 16:59:24 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 16:59:24 - Job ID 1
+27-Sep-23 16:59:24 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:59:24 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165923970562.xlsx
+27-Sep-23 16:59:24 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165923970562.xlsx
+27-Sep-23 16:59:24 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 16:59:24 - Executing sql script
+27-Sep-23 16:59:24 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165923970562.xlsx
+27-Sep-23 16:59:24 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927165923970562.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927165923970562.xlsx
+27-Sep-23 16:59:25 - Removing temp file
+27-Sep-23 16:59:25 - Sending secure email
+27-Sep-23 16:59:27 - Job 1 Completed Successfully
+27-Sep-23 16:59:27 - Logging Stopped
+27-Sep-23 17:01:34 - Logging Started
+27-Sep-23 17:01:34 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:01:34 - Job ID 1
+27-Sep-23 17:01:34 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:01:34 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170134038345.xlsx
+27-Sep-23 17:01:34 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170134038345.xlsx
+27-Sep-23 17:01:34 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:01:34 - Executing sql script
+27-Sep-23 17:01:34 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170134038345.xlsx
+27-Sep-23 17:01:34 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170134038345.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170134038345.xlsx
+27-Sep-23 17:01:35 - Removing temp file
+27-Sep-23 17:01:35 - Sending secure email
+27-Sep-23 17:01:38 - Job 1 Completed Successfully
+27-Sep-23 17:01:38 - Logging Stopped
+27-Sep-23 17:03:56 - Logging Started
+27-Sep-23 17:03:56 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:03:56 - Job ID 1
+27-Sep-23 17:03:56 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:03:56 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170356018926.xlsx
+27-Sep-23 17:03:56 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170356018926.xlsx
+27-Sep-23 17:03:56 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:03:56 - Executing sql script
+27-Sep-23 17:03:56 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170356018926.xlsx
+27-Sep-23 17:03:56 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170356018926.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170356018926.xlsx
+27-Sep-23 17:03:56 - Removing temp file
+27-Sep-23 17:03:56 - Sending secure email
+27-Sep-23 17:03:59 - Job 1 Completed Successfully
+27-Sep-23 17:03:59 - Logging Stopped
+27-Sep-23 17:05:06 - Logging Started
+27-Sep-23 17:05:06 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:05:06 - Job ID 1
+27-Sep-23 17:05:06 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:05:06 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170506084546.xlsx
+27-Sep-23 17:05:06 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170506084546.xlsx
+27-Sep-23 17:05:06 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:05:06 - Executing sql script
+27-Sep-23 17:05:06 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170506084546.xlsx
+27-Sep-23 17:05:06 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170506084546.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170506084546.xlsx
+27-Sep-23 17:05:06 - Removing temp file
+27-Sep-23 17:05:06 - Sending secure email
+27-Sep-23 17:05:09 - Job 1 Completed Successfully
+27-Sep-23 17:05:09 - Logging Stopped
+27-Sep-23 17:07:39 - Logging Started
+27-Sep-23 17:07:39 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:07:39 - Job ID 1
+27-Sep-23 17:07:39 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:07:39 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170739574559.xlsx
+27-Sep-23 17:07:39 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170739574559.xlsx
+27-Sep-23 17:07:39 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:07:39 - Executing sql script
+27-Sep-23 17:07:40 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170739574559.xlsx
+27-Sep-23 17:07:40 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170739574559.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170739574559.xlsx
+27-Sep-23 17:07:40 - Removing temp file
+27-Sep-23 17:07:40 - Sending secure email
+27-Sep-23 17:07:44 - Job 1 Completed Successfully
+27-Sep-23 17:07:44 - Logging Stopped
+27-Sep-23 17:08:36 - Logging Started
+27-Sep-23 17:08:36 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:08:36 - Job ID 1
+27-Sep-23 17:08:36 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:08:36 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170836410710.xlsx
+27-Sep-23 17:08:36 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170836410710.xlsx
+27-Sep-23 17:08:36 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:08:36 - Executing sql script
+27-Sep-23 17:08:36 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170836410710.xlsx
+27-Sep-23 17:08:36 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927170836410710.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927170836410710.xlsx
+27-Sep-23 17:08:37 - Removing temp file
+27-Sep-23 17:08:37 - Sending secure email
+27-Sep-23 17:08:39 - Job 1 Completed Successfully
+27-Sep-23 17:08:39 - Logging Stopped
+27-Sep-23 17:58:53 - Logging Started
+27-Sep-23 17:58:53 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 17:58:53 - Job ID 1
+27-Sep-23 17:58:54 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:58:54 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927175853934347.xlsx
+27-Sep-23 17:58:54 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927175853934347.xlsx
+27-Sep-23 17:58:54 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 17:58:54 - Executing sql script
+27-Sep-23 17:58:54 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927175853934347.xlsx
+27-Sep-23 17:58:54 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927175853934347.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927175853934347.xlsx
+27-Sep-23 17:58:55 - Removing temp file
+27-Sep-23 17:58:55 - Sending secure email
+27-Sep-23 17:58:58 - Job 1 Completed Successfully
+27-Sep-23 17:58:59 - Job 1 Completed Successfully
+27-Sep-23 17:58:59 - Logging Stopped
+27-Sep-23 18:21:02 - Logging Started
+27-Sep-23 18:21:02 - Log File c:\users\chanson\documents\dev\github\sql2excel/LOGS/sql2excel-20230927.log
+27-Sep-23 18:21:02 - Job ID 1
+27-Sep-23 18:21:02 - Script file c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 18:21:02 - Output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927182102268265.xlsx
+27-Sep-23 18:21:02 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927182102268265.xlsx
+27-Sep-23 18:21:02 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel/SQL/1_Telehealth next 7 days.sql
+27-Sep-23 18:21:02 - Executing sql script
+27-Sep-23 18:21:06 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927182102268265.xlsx
+27-Sep-23 18:21:06 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel/OUT/TH_Appointments-1-20230927182102268265.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20230927182102268265.xlsx
+27-Sep-23 18:21:06 - Removing temp file
+27-Sep-23 18:21:06 - Sending secure email
+27-Sep-23 18:21:09 - Job 1 Completed Successfully
+27-Sep-23 18:21:11 - Job 1 Completed Successfully
+27-Sep-23 18:21:11 - Logging Stopped
