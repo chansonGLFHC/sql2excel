@@ -15,8 +15,7 @@
 			"OutputName": "TH Appointments",
 			"Email": "chanson@glfhc.org,coreyhanson@comcast.net",
 			"EmailSubject": "TH Appointments",
-			"EmailBody": "Hi Corey,\n Here is the report you requested for Patient with Upcoming TH Appointments.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest",
-			"WebHookSuccess": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/c548c74cadaa468f9f52c21beeca657c/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd"
+			"EmailBody": "Hi Corey,\n Here is the report you requested for Patient with Upcoming TH Appointments.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		},
 		{
 			"job": "2",
@@ -26,8 +25,7 @@
 			"OutputName": "36 Month Panel to be reassigned",
 			"Email": "ehaddock@glfhc.org,jlichkus@glfhc.org",
 			"EmailSubject": "36 Month Panel to be reassigned",
-			"EmailBody": "Hi,\n Here is the report you requested for Patient with Upcoming TH Appointments.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest",
-			"WebHookSuccess": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/c548c74cadaa468f9f52c21beeca657c/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd"
+			"EmailBody": "Hi,\n Here is the report you requested for 36 Month Panel to be Reassigned.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		}
 	]
 }
