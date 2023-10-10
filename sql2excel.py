@@ -59,20 +59,26 @@ from email.utils import COMMASPACE, formatdate
 #Initialize some variables
 date = datetime.now() #time.localtime() # get struct_time
 APP_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
-LOG_DIR = APP_DIR+'/LOGS/'
-SQL_DIR = APP_DIR+'/SQL/'
-OUT_DIR = APP_DIR+'/OUT/'
-FINAL_DIR = APP_DIR+'/FINAL/'
-METADATA = APP_DIR+"/Metadata.xlsx"
+LOG_DIR = os.path.join(APP_DIR,'LOGS')
+SQL_DIR = os.path.join(APP_DIR,'SQL')
+OUT_DIR = os.path.join(APP_DIR,'OUT')
+FINAL_DIR = os.path.join(APP_DIR,'FINAL')
+
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+if not os.path.exists(SQL_DIR):
+    os.makedirs(SQL_DIR)
+if not os.path.exists(OUT_DIR):
+    os.makedirs(OUT_DIR)
+if not os.path.exists(FINAL_DIR):
+    os.makedirs(FINAL_DIR)
+        
+LOG_NAME = os.path.join(LOG_DIR,'sql2excel-'+date.strftime("%Y%m%d")+'.log')
 
 DefaultWebHookError=""
 DefaultEmailOnError=""
 DefaultWebHookSucces=""
 DefaultFilePurgeDays=""
-
-
-#set filenames
-LOG_NAME = LOG_DIR+'sql2excel-'+date.strftime("%Y%m%d")+'.log'
 
 
 def PurgeFiles(path, purgedays=14):
@@ -84,19 +90,6 @@ def PurgeFiles(path, purgedays=14):
             if os.path.isfile(f):
                 logging.info("removing " + os.path.join(path, f))
                 os.remove(os.path.join(path, f))
-
-def checkDirs():
-    global LOG_DIR, SQL_DIR, OUT_DIR
-    #some housekeeping check that the paths exist
-    logging.info("Checking Directories")
-    if not os.path.exists(LOG_DIR):
-        os.makedirs(LOG_DIR)
-    if not os.path.exists(SQL_DIR):
-        os.makedirs(SQL_DIR)
-    if not os.path.exists(OUT_DIR):
-        os.makedirs(OUT_DIR)
-    if not os.path.exists(FINAL_DIR):
-        os.makedirs(FINAL_DIR)
 
 def getconfig():
     logging.info("Reading Configuration")
@@ -120,8 +113,6 @@ def setGlobal(config):
     DefaultEmailOnError = defaults[0]['DefaultEmailOnError']
     DefaultFilePurgeDays = defaults[0]['DefaultFilePurgeDays']
     
-
-
 def setup_logging():
     #Start Logging
     #Turn on logging in append
@@ -206,7 +197,7 @@ def runexcel2sql(config, conn, args):
         #does job matches passed in argument
         if str(JobID)==str(args.job):
             JobActive=job['Active']
-            JobInputSQL=SQL_DIR+str(job['InputSQL'])
+            JobInputSQL=os.path.join(SQL_DIR,str(job['InputSQL']))
             JobOutputDir=job['OutputDir']
             JobOutputName=job['OutputName']
             JobEmail=job['Email']
@@ -228,8 +219,8 @@ def runexcel2sql(config, conn, args):
                 #file format: JobName-JobID-RunTime.xlsx                    
                 JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+"-"+date.strftime("%Y%m%d")+'.xlsx'
                 logging.info("Script file %s",JobInputSQL)
-                logging.info("Output file %s",OUT_DIR+JobOutputFileName)
-                logging.info("Final file %s",JobOutputDir+"/"+JobOutputFileName)
+                logging.info("Output file %s",str(os.path.join(OUT_DIR,JobOutputFileName)))
+                logging.info("Final file %s",str(os.path.join(JobOutputDir,JobOutputFileName)))
 
                 logging.info("Reading SQl script %s", JobInputSQL)
                 filedata = open(JobInputSQL, "r")    
@@ -239,16 +230,16 @@ def runexcel2sql(config, conn, args):
                 result = pd.read_sql_query(sqldata, conn, coerce_float='False')
 
                 #create excel file
-                logging.info("Creating temp output file %s",OUT_DIR+JobOutputFileName)
-                result.to_excel(OUT_DIR+JobOutputFileName, index = False)
+                logging.info("Creating temp output file %s",str(os.path.join(OUT_DIR,JobOutputFileName)))
+                result.to_excel(os.path.join(OUT_DIR,JobOutputFileName), index = False)
                                
                 #copy file to final location
-                logging.info("Copying temp output file %s to final location %s",OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
-                dest=shutil.copyfile(OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
+                logging.info("Copying temp output file %s to final location %s",str(os.path.join(OUT_DIR,JobOutputFileName)), str(os.path.join(JobOutputDir,JobOutputFileName)))
+                dest=shutil.copyfile(os.path.join(OUT_DIR,JobOutputFileName), os.path.join(JobOutputDir,JobOutputFileName))
 
                 #clean up temp file
                 logging.info("Removing temp file")
-                os.remove(OUT_DIR+JobOutputFileName)
+                os.remove(os.path.join(OUT_DIR,JobOutputFileName))
 
                 #send notification email
                 if JobEmail:
@@ -257,7 +248,7 @@ def runexcel2sql(config, conn, args):
                                      str(JobEmail), 
                                      str(JobEmailSubject), 
                                      str(JobEmailBody), 
-                                     files=[JobOutputDir+"/"+JobOutputFileName])
+                                     files=[os.path.join(JobOutputDir,JobOutputFileName)])
                 #send success messages               
                 if DefaultWebHookSuccess:
                     SendTeamsMessage(DefaultWebHookSuccess,
@@ -272,18 +263,15 @@ def main():
     print("******************************")
 
     try:
-        # Check Directory Structure
-        checkDirs()
-        
+        #Start Logging
+        setup_logging()
+
         # get config values
         config = getconfig()
         args = getargs()
         
         #set Global variables
         setGlobal(config)
-        
-        #Start Logging
-        setup_logging()
         
         #Clean Old Files
         PurgeFiles(LOG_DIR,DefaultFilePurgeDays)

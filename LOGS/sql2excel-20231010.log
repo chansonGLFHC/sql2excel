@@ -1,0 +1,128 @@
+10-Oct-23 09:38:45 - Logging Started
+10-Oct-23 09:38:45 - Log File c:\users\chanson\documents\dev\github\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:38:45 - Checking Directories
+10-Oct-23 09:38:45 - Reading Configuration
+10-Oct-23 09:38:45 - Parsing Arguments
+10-Oct-23 09:38:45 - set Global Variables
+10-Oct-23 09:38:45 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\LOGS > 14 days old
+10-Oct-23 09:38:45 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\FINAL > 14 days old
+10-Oct-23 09:38:45 - Job ID 1
+10-Oct-23 09:38:45 - Error Job %s %s - Input File not found c:\users\chanson\documents\dev\github\sql2excel\SQL1_Telehealth next 7 days.sql Tue Oct 10 09:38:45 2023
+10-Oct-23 09:38:45 - Script file c:\users\chanson\documents\dev\github\sql2excel\SQL1_Telehealth next 7 days.sql
+10-Oct-23 09:38:45 - Output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:38:45 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:38:45 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel\SQL1_Telehealth next 7 days.sql
+10-Oct-23 09:38:45 - ************************************************************************************************
+10-Oct-23 09:38:45 - ***** Job 1 Failed
+10-Oct-23 09:38:45 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sql2excel.py", line 297, in main
+    runexcel2sql(config, conn, args)
+  File "c:\users\chanson\documents\dev\github\sql2excel\sql2excel.py", line 236, in runexcel2sql
+    filedata = open(JobInputSQL, "r")
+           ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'c:\\users\\chanson\\documents\\dev\\github\\sql2excel\\SQL1_Telehealth next 7 days.sql'
+
+10-Oct-23 09:38:46 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+10-Oct-23 09:38:48 - Logging Stopped
+10-Oct-23 09:42:25 - Logging Started
+10-Oct-23 09:42:25 - Log File c:\users\chanson\documents\dev\github\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:42:25 - Checking Directories
+10-Oct-23 09:42:25 - Reading Configuration
+10-Oct-23 09:42:25 - Parsing Arguments
+10-Oct-23 09:42:25 - set Global Variables
+10-Oct-23 09:42:25 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\LOGS > 14 days old
+10-Oct-23 09:42:25 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\FINAL > 14 days old
+10-Oct-23 09:42:25 - ************************************************************************************************
+10-Oct-23 09:42:25 - ***** Job 1 Failed
+10-Oct-23 09:42:25 - ***** xmloutput error 
+Traceback (most recent call last):
+  File "c:\users\chanson\documents\dev\github\sql2excel\sql2excel.py", line 297, in main
+    runexcel2sql(config, conn, args)
+  File "c:\users\chanson\documents\dev\github\sql2excel\sql2excel.py", line 210, in runexcel2sql
+    JobInputSQL=os.join.path(SQL_DIR,str(job['InputSQL']))
+                ^^^^^^^
+AttributeError: module 'os' has no attribute 'join'
+
+10-Oct-23 09:42:25 - 550 b'5.7.60 SMTP; Client does not have permissions to send as this sender'
+10-Oct-23 09:42:28 - Logging Stopped
+10-Oct-23 09:43:08 - Logging Started
+10-Oct-23 09:43:08 - Log File c:\users\chanson\documents\dev\github\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:43:08 - Checking Directories
+10-Oct-23 09:43:08 - Reading Configuration
+10-Oct-23 09:43:08 - Parsing Arguments
+10-Oct-23 09:43:08 - set Global Variables
+10-Oct-23 09:43:08 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\LOGS > 14 days old
+10-Oct-23 09:43:08 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\FINAL > 14 days old
+10-Oct-23 09:43:08 - Job ID 1
+10-Oct-23 09:43:08 - Script file c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:43:08 - Output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:43:08 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:43:08 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:43:08 - Executing sql script
+10-Oct-23 09:43:08 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:43:08 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:43:09 - Removing temp file
+10-Oct-23 09:43:09 - Sending secure email
+10-Oct-23 09:43:12 - Job 1 Completed Successfully
+10-Oct-23 09:43:12 - Logging Stopped
+10-Oct-23 09:45:21 - Logging Started
+10-Oct-23 09:45:21 - Log File c:\users\chanson\documents\dev\github\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:45:21 - Checking Directories
+10-Oct-23 09:45:21 - Reading Configuration
+10-Oct-23 09:45:21 - Parsing Arguments
+10-Oct-23 09:45:21 - set Global Variables
+10-Oct-23 09:45:21 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\LOGS > 14 days old
+10-Oct-23 09:45:21 - removing c:\users\chanson\documents\dev\github\sql2excel\LOGS\glfhc_logo.jpg
+10-Oct-23 09:45:21 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\FINAL > 14 days old
+10-Oct-23 09:45:21 - Job ID 1
+10-Oct-23 09:45:22 - Script file c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:45:22 - Output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:45:22 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:45:22 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:45:22 - Executing sql script
+10-Oct-23 09:45:23 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:45:23 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel\OUTTH_Appointments-1-20231010.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:45:24 - Removing temp file
+10-Oct-23 09:45:24 - Sending secure email
+10-Oct-23 09:45:26 - Job 1 Completed Successfully
+10-Oct-23 09:45:26 - Logging Stopped
+10-Oct-23 09:46:12 - Logging Started
+10-Oct-23 09:46:12 - Log File u:\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:46:12 - Checking Directories
+10-Oct-23 09:46:12 - Reading Configuration
+10-Oct-23 09:46:12 - Parsing Arguments
+10-Oct-23 09:46:12 - set Global Variables
+10-Oct-23 09:46:12 - Purging Files in: u:\sql2excel\LOGS > 14 days old
+10-Oct-23 09:46:12 - Purging Files in: u:\sql2excel\FINAL > 14 days old
+10-Oct-23 09:46:12 - Job ID 1
+10-Oct-23 09:46:12 - Script file u:\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:46:12 - Output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:46:12 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:46:12 - Reading SQl script u:\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:46:13 - Executing sql script
+10-Oct-23 09:46:13 - Creating temp output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:46:14 - Copying temp output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:46:15 - Removing temp file
+10-Oct-23 09:46:15 - Sending secure email
+10-Oct-23 09:46:17 - Job 1 Completed Successfully
+10-Oct-23 09:46:17 - Logging Stopped
+10-Oct-23 09:51:46 - Logging Started
+10-Oct-23 09:51:46 - Log File u:\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:51:46 - Reading Configuration
+10-Oct-23 09:51:46 - Parsing Arguments
+10-Oct-23 09:51:46 - set Global Variables
+10-Oct-23 09:51:46 - Purging Files in: u:\sql2excel\LOGS > 14 days old
+10-Oct-23 09:51:46 - Purging Files in: u:\sql2excel\FINAL > 14 days old
+10-Oct-23 09:51:47 - Job ID 1
+10-Oct-23 09:51:47 - Script file u:\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:51:47 - Output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:51:47 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:51:47 - Reading SQl script u:\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:51:47 - Executing sql script
+10-Oct-23 09:51:47 - Creating temp output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx
+10-Oct-23 09:51:48 - Copying temp output file u:\sql2excel\OUTTH_Appointments-1-20231010.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL/TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:51:48 - Removing temp file
+10-Oct-23 09:51:48 - Sending secure email
+10-Oct-23 09:51:51 - Job 1 Completed Successfully
+10-Oct-23 09:51:51 - Logging Stopped
