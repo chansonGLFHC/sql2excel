@@ -3,7 +3,8 @@
 		{
 			"DefaultWebHookError": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/3ab6046f025e42f0ba103e30d89bf8cf/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
 			"DefaultWebHookSuccess": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/c548c74cadaa468f9f52c21beeca657c/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
-			"DefaultEmailOnError": "chanson@glfhc.org"
+			"DefaultEmailOnError": "chanson@glfhc.org",
+			"DefaultFilePurgeDays": "14"
 		}
 	],
 	"jobs": [
@@ -26,6 +27,16 @@
 			"Email": "ehaddock@glfhc.org,jlichkus@glfhc.org",
 			"EmailSubject": "36 Month Panel to be reassigned",
 			"EmailBody": "Hi,\n Here is the report you requested for 36 Month Panel to be Reassigned.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
+		},
+		{
+			"job": "3",
+			"Active": "1",
+			"InputSQL": "3_OBAT Care Management Monthly.sql",
+			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL",
+			"OutputName": "OBAT Care Management Monthly",
+			"Email": "hphillip@glfhc.org,abositis@glfhc.org",
+			"EmailSubject": "OBAT Care Management Monthly",
+			"EmailBody": "Hi,\n Here is the report you requested for OBAT Care Management Monthly.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		}
 	]
 }

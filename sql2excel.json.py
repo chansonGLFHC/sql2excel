@@ -30,6 +30,9 @@ Date        user      description
 =========================================================
 20230821    chanson   Initial Creation of script
 20230828    chanson   Added support to send encrypted email (email address, subject, message added to metadata)
+20231002    chanson   Removed time portion of datetime filestamp
+20231003    chanson   Removed JobWebHookSuccess from logic flow
+20231010    chanson   Added new default paramter defaultpurgedays and logic to purge log and final folder
 
 """
 
@@ -59,28 +62,49 @@ APP_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
 LOG_DIR = APP_DIR+'/LOGS/'
 SQL_DIR = APP_DIR+'/SQL/'
 OUT_DIR = APP_DIR+'/OUT/'
+FINAL_DIR = APP_DIR+'/FINAL/'
 METADATA = APP_DIR+"/Metadata.xlsx"
 
-DefaultWebHookError="https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/3ab6046f025e42f0ba103e30d89bf8cf/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd"
-DefaultWebHookSuccess="https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/3ab6046f025e42f0ba103e30d89bf8cf/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd"
+DefaultWebHookError=""
 DefaultEmailOnError=""
+DefaultWebHookSucces=""
+DefaultFilePurgeDays=""
 
-#some housekeeping check that the paths exist
-if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR)
-if not os.path.exists(SQL_DIR):
-    os.makedirs(SQL_DIR)
-if not os.path.exists(OUT_DIR):
-    os.makedirs(OUT_DIR)
 
 #set filenames
 LOG_NAME = LOG_DIR+'sql2excel-'+date.strftime("%Y%m%d")+'.log'
 
+
+def PurgeFiles(path, purgedays=14):
+    logging.info("Purging Files in: " + path + " > " +str(purgedays) + " days old")
+    now = time.time()
+    for f in os.listdir(path):
+        f = os.path.join(path, f)
+        if os.stat(f).st_mtime < now -int(purgedays) * 86400:
+            if os.path.isfile(f):
+                logging.info("removing " + os.path.join(path, f))
+                os.remove(os.path.join(path, f))
+
+def checkDirs():
+    global LOG_DIR, SQL_DIR, OUT_DIR
+    #some housekeeping check that the paths exist
+    logging.info("Checking Directories")
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
+    if not os.path.exists(SQL_DIR):
+        os.makedirs(SQL_DIR)
+    if not os.path.exists(OUT_DIR):
+        os.makedirs(OUT_DIR)
+    if not os.path.exists(FINAL_DIR):
+        os.makedirs(FINAL_DIR)
+
 def getconfig():
+    logging.info("Reading Configuration")
     config = json.loads(open(os.path.join(APP_DIR, 'Metadata.json')).read())
     return config
 
 def getargs():
+    logging.info("Parsing Arguments")
     parser = argparse.ArgumentParser(description='Run SQL code and save to excel')
     parser.add_argument('--job', '-j', default=1, help='job id to execute from metadata')
     args = parser.parse_args()
@@ -88,11 +112,14 @@ def getargs():
 
 # Pulls the start and end dates from e2lconfig.json to be used in the queries.
 def setGlobal(config):
-    global DefaultWebHookError, DefaultWebHookSuccess, DefaultEmailOnError
+    global DefaultWebHookError, DefaultWebHookSuccess, DefaultEmailOnError, DefaultFilePurgeDays
+    logging.info("set Global Variables")
     defaults = config['defaults']
     DefaultWebHookError = defaults[0]['DefaultWebHookError']
     DefaultWebHookSuccess = defaults[0]['DefaultWebHookSuccess']
     DefaultEmailOnError = defaults[0]['DefaultEmailOnError']
+    DefaultFilePurgeDays = defaults[0]['DefaultFilePurgeDays']
+    
 
 
 def setup_logging():
@@ -185,7 +212,6 @@ def runexcel2sql(config, conn, args):
             JobEmail=job['Email']
             JobEmailSubject=job['EmailSubject']
             JobEmailBody=job['EmailBody']
-            JobWebHookSuccess=job['WebHookSuccess']
             
             logging.info("Job ID %s",JobID)    
             #Is Current job Active
@@ -200,7 +226,7 @@ def runexcel2sql(config, conn, args):
                     
                 #final output filename
                 #file format: JobName-JobID-RunTime.xlsx                    
-                JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+"-"+date.strftime("%Y%m%d%H%M%S%f")+'.xlsx'
+                JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+"-"+date.strftime("%Y%m%d")+'.xlsx'
                 logging.info("Script file %s",JobInputSQL)
                 logging.info("Output file %s",OUT_DIR+JobOutputFileName)
                 logging.info("Final file %s",JobOutputDir+"/"+JobOutputFileName)
@@ -215,7 +241,7 @@ def runexcel2sql(config, conn, args):
                 #create excel file
                 logging.info("Creating temp output file %s",OUT_DIR+JobOutputFileName)
                 result.to_excel(OUT_DIR+JobOutputFileName, index = False)
-                
+                               
                 #copy file to final location
                 logging.info("Copying temp output file %s to final location %s",OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
                 dest=shutil.copyfile(OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
@@ -232,18 +258,12 @@ def runexcel2sql(config, conn, args):
                                      str(JobEmailSubject), 
                                      str(JobEmailBody), 
                                      files=[JobOutputDir+"/"+JobOutputFileName])
-                #send success messages
-                if JobWebHookSuccess:
-                    SendTeamsMessage(JobWebHookSuccess,
-                                     "Job "+str(JobOutputName)+" completed", 
-                                     "Job ID "+str(args.job)+" - "+str(JobOutputName)+" completed successfully")
-                    logging.info("Job %s Completed Successfully", str(JobID))
-                
+                #send success messages               
                 if DefaultWebHookSuccess:
                     SendTeamsMessage(DefaultWebHookSuccess,
                                      "Job "+str(JobOutputName)+" completed", 
                                      "Job ID "+str(args.job)+" - "+str(JobOutputName)+" completed successfully")
-                    logging.info("Job %s Completed Successfully", str(JobID))
+                logging.info("Job %s Completed Successfully", str(JobID))
 
 
 def main():
@@ -252,14 +272,24 @@ def main():
     print("******************************")
 
     try:
+        # Check Directory Structure
+        checkDirs()
+        
         # get config values
         config = getconfig()
         args = getargs()
         
+        #set Global variables
         setGlobal(config)
         
+        #Start Logging
         setup_logging()
-    
+        
+        #Clean Old Files
+        PurgeFiles(LOG_DIR,DefaultFilePurgeDays)
+        PurgeFiles(FINAL_DIR,DefaultFilePurgeDays)
+        
+        #Create DB Connection
         conn = createSQLConnection();
     
         # breakpoint()
@@ -273,7 +303,7 @@ def main():
         logging.error("***** Job %s Failed",str(args.job))
         logging.error("***** xmloutput error " + "\n" + str(traceback.format_exc()))        
         
-        SendEmailMessage("chanson@glfhc.org", 
+        SendEmailMessage("chanson@comcast.net", 
                          DefaultEmailOnError, 
                          "sql2excel job errors", 
                          errmsg, 

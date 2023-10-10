@@ -32,6 +32,7 @@ Date        user      description
 20230828    chanson   Added support to send encrypted email (email address, subject, message added to metadata)
 20231002    chanson   Removed time portion of datetime filestamp
 20231003    chanson   Removed JobWebHookSuccess from logic flow
+20231010    chanson   Added new default paramter defaultpurgedays and logic to purge log and final folder
 
 """
 
@@ -61,27 +62,49 @@ APP_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
 LOG_DIR = APP_DIR+'/LOGS/'
 SQL_DIR = APP_DIR+'/SQL/'
 OUT_DIR = APP_DIR+'/OUT/'
+FINAL_DIR = APP_DIR+'/FINAL/'
 METADATA = APP_DIR+"/Metadata.xlsx"
 
+DefaultWebHookError=""
 DefaultEmailOnError=""
 DefaultWebHookSucces=""
+DefaultFilePurgeDays=""
 
-#some housekeeping check that the paths exist
-if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR)
-if not os.path.exists(SQL_DIR):
-    os.makedirs(SQL_DIR)
-if not os.path.exists(OUT_DIR):
-    os.makedirs(OUT_DIR)
 
 #set filenames
 LOG_NAME = LOG_DIR+'sql2excel-'+date.strftime("%Y%m%d")+'.log'
 
+
+def PurgeFiles(path, purgedays=14):
+    logging.info("Purging Files in: " + path + " > " +str(purgedays) + " days old")
+    now = time.time()
+    for f in os.listdir(path):
+        f = os.path.join(path, f)
+        if os.stat(f).st_mtime < now -int(purgedays) * 86400:
+            if os.path.isfile(f):
+                logging.info("removing " + os.path.join(path, f))
+                os.remove(os.path.join(path, f))
+
+def checkDirs():
+    global LOG_DIR, SQL_DIR, OUT_DIR
+    #some housekeeping check that the paths exist
+    logging.info("Checking Directories")
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
+    if not os.path.exists(SQL_DIR):
+        os.makedirs(SQL_DIR)
+    if not os.path.exists(OUT_DIR):
+        os.makedirs(OUT_DIR)
+    if not os.path.exists(FINAL_DIR):
+        os.makedirs(FINAL_DIR)
+
 def getconfig():
+    logging.info("Reading Configuration")
     config = json.loads(open(os.path.join(APP_DIR, 'Metadata.json')).read())
     return config
 
 def getargs():
+    logging.info("Parsing Arguments")
     parser = argparse.ArgumentParser(description='Run SQL code and save to excel')
     parser.add_argument('--job', '-j', default=1, help='job id to execute from metadata')
     args = parser.parse_args()
@@ -89,11 +112,14 @@ def getargs():
 
 # Pulls the start and end dates from e2lconfig.json to be used in the queries.
 def setGlobal(config):
-    global DefaultWebHookError, DefaultWebHookSuccess, DefaultEmailOnError
+    global DefaultWebHookError, DefaultWebHookSuccess, DefaultEmailOnError, DefaultFilePurgeDays
+    logging.info("set Global Variables")
     defaults = config['defaults']
     DefaultWebHookError = defaults[0]['DefaultWebHookError']
     DefaultWebHookSuccess = defaults[0]['DefaultWebHookSuccess']
     DefaultEmailOnError = defaults[0]['DefaultEmailOnError']
+    DefaultFilePurgeDays = defaults[0]['DefaultFilePurgeDays']
+    
 
 
 def setup_logging():
@@ -215,7 +241,7 @@ def runexcel2sql(config, conn, args):
                 #create excel file
                 logging.info("Creating temp output file %s",OUT_DIR+JobOutputFileName)
                 result.to_excel(OUT_DIR+JobOutputFileName, index = False)
-                
+                               
                 #copy file to final location
                 logging.info("Copying temp output file %s to final location %s",OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
                 dest=shutil.copyfile(OUT_DIR+JobOutputFileName, JobOutputDir+"/"+JobOutputFileName)
@@ -237,7 +263,7 @@ def runexcel2sql(config, conn, args):
                     SendTeamsMessage(DefaultWebHookSuccess,
                                      "Job "+str(JobOutputName)+" completed", 
                                      "Job ID "+str(args.job)+" - "+str(JobOutputName)+" completed successfully")
-                    logging.info("Job %s Completed Successfully", str(JobID))
+                logging.info("Job %s Completed Successfully", str(JobID))
 
 
 def main():
@@ -246,14 +272,24 @@ def main():
     print("******************************")
 
     try:
+        # Check Directory Structure
+        checkDirs()
+        
         # get config values
         config = getconfig()
         args = getargs()
         
+        #set Global variables
         setGlobal(config)
         
+        #Start Logging
         setup_logging()
-    
+        
+        #Clean Old Files
+        PurgeFiles(LOG_DIR,DefaultFilePurgeDays)
+        PurgeFiles(FINAL_DIR,DefaultFilePurgeDays)
+        
+        #Create DB Connection
         conn = createSQLConnection();
     
         # breakpoint()
