@@ -126,3 +126,22 @@ AttributeError: module 'os' has no attribute 'join'
 10-Oct-23 09:51:48 - Sending secure email
 10-Oct-23 09:51:51 - Job 1 Completed Successfully
 10-Oct-23 09:51:51 - Logging Stopped
+10-Oct-23 09:57:04 - Logging Started
+10-Oct-23 09:57:04 - Log File c:\users\chanson\documents\dev\github\sql2excel\LOGS\sql2excel-20231010.log
+10-Oct-23 09:57:04 - Reading Configuration
+10-Oct-23 09:57:04 - Parsing Arguments
+10-Oct-23 09:57:04 - set Global Variables
+10-Oct-23 09:57:04 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\LOGS > 14 days old
+10-Oct-23 09:57:04 - Purging Files in: c:\users\chanson\documents\dev\github\sql2excel\FINAL > 14 days old
+10-Oct-23 09:57:04 - Job ID 1
+10-Oct-23 09:57:04 - Script file c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:57:04 - Output file c:\users\chanson\documents\dev\github\sql2excel\OUT\TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:57:04 - Final file \\CPS-UTILITY\EMR Resources\sql2excel\FINAL\TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:57:04 - Reading SQl script c:\users\chanson\documents\dev\github\sql2excel\SQL\1_Telehealth next 7 days.sql
+10-Oct-23 09:57:04 - Executing sql script
+10-Oct-23 09:57:05 - Creating temp output file c:\users\chanson\documents\dev\github\sql2excel\OUT\TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:57:05 - Copying temp output file c:\users\chanson\documents\dev\github\sql2excel\OUT\TH_Appointments-1-20231010.xlsx to final location \\CPS-UTILITY\EMR Resources\sql2excel\FINAL\TH_Appointments-1-20231010.xlsx
+10-Oct-23 09:57:05 - Removing temp file
+10-Oct-23 09:57:05 - Sending secure email
+10-Oct-23 09:57:08 - Job 1 Completed Successfully
+10-Oct-23 09:57:08 - Logging Stopped

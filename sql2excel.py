@@ -33,7 +33,8 @@ Date        user      description
 20231002    chanson   Removed time portion of datetime filestamp
 20231003    chanson   Removed JobWebHookSuccess from logic flow
 20231010    chanson   Added new default paramter defaultpurgedays and logic to purge log and final folder
-
+20231102    chanson   Added ability to have excel files with data connections to source files that will
+            chanson   Added MasterExcel, Overwrite and RefreshDataConnections
 """
 
 import sys, os, json, math, traceback
@@ -46,6 +47,7 @@ import logging
 import pymsteams
 import shutil
 import smtplib
+import win32com.client
 from os.path import basename
 from datetime import datetime
 from email.mime.application import MIMEApplication
@@ -82,7 +84,7 @@ DefaultFilePurgeDays=""
 
 
 def PurgeFiles(path, purgedays=14):
-    logging.info("Purging Files in: " + path + " > " +str(purgedays) + " days old")
+    logging.info("Purging Files in: " + path + " > " +str(purgedays) + " days")
     now = time.time()
     for f in os.listdir(path):
         f = os.path.join(path, f)
@@ -201,8 +203,10 @@ def runexcel2sql(config, conn, args):
             JobOutputDir=job['OutputDir']
             JobOutputName=job['OutputName']
             JobEmail=job['Email']
+            JobOverwrite=job['Overwrite']
             JobEmailSubject=job['EmailSubject']
             JobEmailBody=job['EmailBody']
+            JobMasterExcel=job['MasterExcel']
             
             logging.info("Job ID %s",JobID)    
             #Is Current job Active
@@ -216,8 +220,11 @@ def runexcel2sql(config, conn, args):
                     os.makedirs(JobOutputDir)
                     
                 #final output filename
-                #file format: JobName-JobID-RunTime.xlsx                    
-                JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+"-"+date.strftime("%Y%m%d")+'.xlsx'
+                #file format: JobName-JobID-RunTime.xlsx
+                if int(JobOverwrite)==1:
+                    JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+'.xlsx'                    
+                else:
+                    JobOutputFileName = JobOutputName.replace(" ", "_")+"-"+JobID+"-"+date.strftime("%Y%m%d")+'.xlsx'
                 logging.info("Script file %s",JobInputSQL)
                 logging.info("Output file %s",str(os.path.join(OUT_DIR,JobOutputFileName)))
                 logging.info("Final file %s",str(os.path.join(JobOutputDir,JobOutputFileName)))
@@ -227,7 +234,11 @@ def runexcel2sql(config, conn, args):
                 sqldata = filedata.read()
                 
                 logging.info("Executing sql script")
-                result = pd.read_sql_query(sqldata, conn, coerce_float='False')
+                try:
+                    result = pd.read_sql_query(sqldata, conn, coerce_float='False')
+                except sa.exc.OperationalError as e:
+                    print(format(e.args))
+                    logging.error('Error occured while executing a query {}'.format(e.args))
 
                 #create excel file
                 logging.info("Creating temp output file %s",str(os.path.join(OUT_DIR,JobOutputFileName)))
@@ -236,10 +247,42 @@ def runexcel2sql(config, conn, args):
                 #copy file to final location
                 logging.info("Copying temp output file %s to final location %s",str(os.path.join(OUT_DIR,JobOutputFileName)), str(os.path.join(JobOutputDir,JobOutputFileName)))
                 dest=shutil.copyfile(os.path.join(OUT_DIR,JobOutputFileName), os.path.join(JobOutputDir,JobOutputFileName))
-
+                
                 #clean up temp file
                 logging.info("Removing temp file")
                 os.remove(os.path.join(OUT_DIR,JobOutputFileName))
+
+                #okay, we made it this far.  If we need to refresh data connections in excel then we shoudl do this
+                #1 refresh connections
+                #2 save
+                #3 remove query connection (so end users don't deal with it) 
+                #4 save as new filename
+                #5 update attachement filename
+                if int(job['RefreshDataConnections'])==1:
+                    logging.info("Refreshing Data Connections")
+                    logging.info("Master File %s",JobInputSQL)
+                    # Open an Instance of Application
+                    xlapp = win32com.client.DispatchEx("Excel.Application") 
+                    xlapp.DisplayAlerts = False
+                    # Open File
+                    Workbook = xlapp.Workbooks.Open(os.path.join(JobOutputDir,JobMasterExcel)) 
+                    # Refresh all  
+                    Workbook.RefreshAll()
+                    # Wait until Refresh is complete
+                    xlapp.CalculateUntilAsyncQueriesDone()
+                    # Save File  
+                    Workbook.Save()
+                    # Remove Data Connections
+                    for conn in Workbook.Connections:
+                        conn.Delete()
+                    # Save as New file for attachment
+                    NewFileName=os.path.basename(JobMasterExcel.replace(" ", "_"))+"-"+JobID+"-"+date.strftime("%Y%m%d")+'.xlsx'
+                    Workbook.SaveAs(os.path.join(JobOutputDir,NewFileName))
+                    JobOutputFileName  = NewFileName
+                    # Quit Instance of Application
+                    xlapp.Quit() 
+                    #Delete Instance of Application
+                    del xlapp                    
 
                 #send notification email
                 if JobEmail:
@@ -253,7 +296,7 @@ def runexcel2sql(config, conn, args):
                 if DefaultWebHookSuccess:
                     SendTeamsMessage(DefaultWebHookSuccess,
                                      "Job "+str(JobOutputName)+" completed", 
-                                     "Job ID "+str(args.job)+" - "+str(JobOutputName)+" completed successfully")
+                                     "Job ID "+str(args.job)+" - "+str(JobOutputFileName)+" completed successfully")
                 logging.info("Job %s Completed Successfully", str(JobID))
 
 

@@ -1,8 +1,8 @@
 {
 	"defaults": [
 		{
-			"DefaultWebHookError": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/3ab6046f025e42f0ba103e30d89bf8cf/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
-			"DefaultWebHookSuccess": "https://glfhc.webhook.office.com/webhookb2/83d67cc8-4d94-447c-91e1-a49cf8efc9db@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/c548c74cadaa468f9f52c21beeca657c/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
+			"DefaultWebHookError": "https://glfhc.webhook.office.com/webhookb2/ed145229-ff45-4665-b219-6a1248846f8d@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/b5c50d5f839a4b4da0ce9be13caa0c0e/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
+			"DefaultWebHookSuccess": "https://glfhc.webhook.office.com/webhookb2/ed145229-ff45-4665-b219-6a1248846f8d@158b8843-5b77-4790-b011-e3b82aded516/IncomingWebhook/57856d31fdc345ceb29da70e550587be/b80ee9c6-d488-4e96-bd2e-ba30e422d7cd",
 			"DefaultEmailOnError": "chanson@glfhc.org",
 			"DefaultFilePurgeDays": "14"
 		}
@@ -10,33 +10,73 @@
 	"jobs": [
 		{
 			"job": "1",
+			"Schedule": "Weekly Monday 8am",
 			"Active": "1",
 			"InputSQL": "1_Telehealth next 7 days.sql",
 			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL",
 			"OutputName": "TH Appointments",
+			"Overwrite": "1",
+			"MasterExcel": "",
+			"RefreshDataConnections": "",
 			"Email": "chanson@glfhc.org,coreyhanson@comcast.net",
 			"EmailSubject": "TH Appointments",
 			"EmailBody": "Hi Corey,\n Here is the report you requested for Patient with Upcoming TH Appointments.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		},
 		{
 			"job": "2",
+			"Schedule": "Weekly Monday 8am",
 			"Active": "1",
 			"InputSQL": "2_36 Month Panel to be Reassigned.sql",
-			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL",
-			"OutputName": "36 Month Panel to be reassigned",
-			"Email": "ehaddock@glfhc.org,jlichkus@glfhc.org",
-			"EmailSubject": "36 Month Panel to be reassigned",
+			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL\\2-panel",
+			"OutputName": "36 Month Panel to be reassigned-raw",
+			"Overwrite": "1",
+			"MasterExcel": "36 Month Panel to be reassigned.xlsx",
+			"RefreshDataConnections": "1",
+			"Email": "ehaddock@glfhc.org,jlichkus@glfhc.org,chanson@glfhc.org",
+			"EmailSubject": "TEST 36 Month Panel to be reassigned",
 			"EmailBody": "Hi,\n Here is the report you requested for 36 Month Panel to be Reassigned.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		},
 		{
 			"job": "3",
+			"Schedule": "Monthly on 5th",
 			"Active": "1",
 			"InputSQL": "3_OBAT Care Management Monthly.sql",
 			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL",
 			"OutputName": "OBAT Care Management Monthly",
-			"Email": "hphillip@glfhc.org,abositis@glfhc.org",
+			"Overwrite": "0",
+			"MasterExcel": "",
+			"RefreshDataConnections": "",
+			"Email": "hphillip@glfhc.org,abositis@glfhc.org,chanson@glfhc.org",
 			"EmailSubject": "OBAT Care Management Monthly",
 			"EmailBody": "Hi,\n Here is the report you requested for OBAT Care Management Monthly.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
+		},
+		{
+			"job": "4",
+			"Schedule": "Weekly Monday 8am",
+			"Active": "1",
+			"InputSQL": "4_Panel Capacity.sql",
+			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL\\4-panelcapacity",
+			"OutputName": "Patient Capacity-raw",
+			"Overwrite": "1",
+			"MasterExcel": "Patient Capacity.xlsx",
+			"RefreshDataConnections": "1",
+			"Email": "ehaddock@glfhc.org,jlichkus@glfhc.org",
+			"EmailSubject": "TEST Panel Capacity",
+			"EmailBody": "Hi,\n Here is the report you requested for 36 Month Panel to be Reassigned.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
+		},
+		{
+			"job": "99",
+			"Schedule": "SAMPLE JOB: Weekly Monday 8am",
+			"Active": "1",
+			"InputSQL": "name_of_sql_file_to_execute.sql",
+			"OutputDir": "\\\\CPS-UTILITY\\EMR Resources\\sql2excel\\FINAL\\panel",
+			"OutputName": "36 Month Panel to be reassigned",
+			"Overwrite": "0",
+			"MasterExcel": "",
+			"RefreshDataConnections": "",
+			"Email": "chanson@glfhc.org",
+			"EmailSubject": "36 Month Panel to be reassigned",
+			"EmailBody": "Hi,\n Here is the report you requested for 36 Month Panel to be Reassigned.  Please see the attached file.  Please contact us at ishelpdesk@glfhc.org if you have any questions or issues.\n\nBest"
 		}
 	]
 }
